@@ -41,6 +41,7 @@ public class AppiumExampleTest {
      * - APK_PATH: Path to the APK file (default: "INSERT_APK_PATH_HERE")
      * - APP_PACKAGE: Package name of the app (default: "INSERT_APP_PACKAGE_HERE")
      * - APP_ACTIVITY: Main activity of the app (default: ".MainActivity")
+     * - DRIVER_URL: URL of the Appium server (default: "http://localhost:4723")
      */
 
     // axe devtools mobile api key
@@ -53,6 +54,8 @@ public class AppiumExampleTest {
     private static final String APP_PACKAGE = getEnv("APP_PACKAGE", "INSERT_APP_PACKAGE_HERE");
     // app activity
     private static final String APP_ACTIVITY = getEnv("APP_ACTIVITY", ".MainActivity");
+    // driver url
+    private static final String DRIVER_URL = getEnv("DRIVER_URL", "http://localhost:4723");
 
     AndroidDriver driver;
     Map<String, String> axeSettings;
@@ -87,7 +90,7 @@ public class AppiumExampleTest {
         caps.setCapability("appium:appActivity", APP_ACTIVITY);
 
         // Initialize the driver
-        driver = new AndroidDriver(URI.create("http://localhost:4723").toURL(), caps);
+        driver = new AndroidDriver(URI.create(DRIVER_URL).toURL(), caps);
     }
 
     @After

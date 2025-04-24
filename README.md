@@ -34,6 +34,7 @@ This project demonstrates how to perform accessibility testing on Android applic
    APK_PATH=/path/to/your/app.apk
    APP_PACKAGE=com.example.app
    APP_ACTIVITY=.MainActivity
+   DRIVER_URL=http://localhost:4723
    ```
 3. Install dependencies:
    ```bash
@@ -98,6 +99,7 @@ The following environment variables can be set in your `.env` file:
 - `APK_PATH`: Path to the APK file (default: "INSERT_APK_PATH_HERE")
 - `APP_PACKAGE`: Package name of the app (default: "INSERT_APP_PACKAGE_HERE")
 - `APP_ACTIVITY`: Main activity of the app (default: ".MainActivity")
+- `DRIVER_URL`: URL of the Appium server (default: "http://localhost:4723")
 
 **Notes**
 - Make sure your `.env` file is not committed to version control (it's in .gitignore)

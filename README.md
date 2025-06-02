@@ -14,7 +14,7 @@ This project demonstrates how to perform accessibility testing on Android applic
 - axeUiAutomator2 Appium Driver
   - https://docs.deque.com/devtools-mobile/2024.9.18/en/appium-setup
 - axe Reporter Binary
-  - https://docs.deque.com/devtools-for-web/4/en/downloads
+  - https://docs.deque.com/devtools-mobile/2024.9.18/en/reporter
 
 
 ## Setup
